@@ -1,95 +1,15 @@
 #include <iostream>
 #include <math.h>
 #include <time.h>
+#include "Calculadora.h"
+#include "Varios.h"
 using namespace std;
-
-float x, y, resultado = 0;
-
-class Calculadora{
-
-public:
-    void suma(){
-        resultado = x + y;
-    }
-
-    void resta(){
-        resultado = x - y;
-    }
-
-    void division(){
-        resultado = x / y;
-    }
-
-    void multiplicacion(){
-        resultado = x * y;
-    }
-
-    void elevar(){
-        resultado = pow(x, y);
-    }
-
-    void raiz(){
-        resultado = sqrt(x);
-    }
-
-    void logaritmo(){
-        resultado = log(x);
-    }
-
-};
-
-class Varios{
-
-public:
-    void promedio(){
-
-        int n;
-        cout << "\nIngrese la cantidad de numeros:  ";
-        cin >> n;
-        cout << endl;
-
-        int numeros[n]{0};
-
-        cout << "Ingrese los numeros" << endl;
-
-        for(int i = 0; i < n; i++){
-
-            cout << "Valor " << i + 1 << ": ";
-            cin >> numeros[i];
-        }
-
-        for(int i = 0; i < n; i++){
-
-            resultado = resultado + numeros[i];
-        }
-
-        resultado = resultado / n;
-
-        cout << "\nEl promedio es: " << resultado << endl;
-    }
-
-    void azar(){
-
-        int primero, ultimo;
-
-        cout << "\nEscribe el primer numero: ";
-        cin >> primero;
-
-        cout << "Escribe el ultimo numero: ";
-        cin >> ultimo;
-
-        srand(time(0));
-        for(int x = x; x < 1; x++){
-        }
-        cout << "\nNumero elegido: " << primero + rand() %(ultimo + 1 - primero) << endl;
-    }
-};
 
 int main(){
 
     int opcion;
 
-    Calculadora CalculadoraObjeto;
+    calculadora CalculadoraObjeto;
     Varios VariosObjeto;
 
     cout << "1: Calculadora" << endl << "2: Varios" << endl;
@@ -146,7 +66,7 @@ int main(){
     if(opcion == 2){
 
         do{
-            cout << "\nOpciones: " << endl << "1 - Promedio\n2 - Numero al azar" << endl;
+            cout << "\nOpciones: " << endl << "1 - Promedio\n2 - Numero al azar\n3 - Lista" << endl;
             cin >> opcion;
 
             switch(opcion){
@@ -155,6 +75,12 @@ int main(){
                 break;
 
                 case 2: VariosObjeto.azar();
+                break;
+
+                case 3: VariosObjeto.lista();
+                break;
+
+                case 4: VariosObjeto.PrintList();
                 break;
             }
         }while(opcion == 2);
