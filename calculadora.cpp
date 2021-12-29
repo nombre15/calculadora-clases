@@ -7,7 +7,7 @@ using namespace std;
 
 int main(){
 
-    int opcion;
+    int opcion, opcion2;
 
     calculadora CalculadoraObjeto;
     Varios VariosObjeto;
@@ -66,10 +66,11 @@ int main(){
     if(opcion == 2){
 
         do{
-            cout << "\nOpciones: " << endl << "1 - Promedio\n2 - Numero al azar\n3 - Lista" << endl;
-            cin >> opcion;
+            cout << "\nOpciones: " << endl << "1 - Promedio\n2 - Numero al azar\n3 - Lista\n4 - Imprimir lista" << endl;
+            cin >> opcion2;
+            cout << endl;
 
-            switch(opcion){
+            switch(opcion2){
 
                 case 1: VariosObjeto.promedio();
                 break;
@@ -83,6 +84,8 @@ int main(){
                 case 4: VariosObjeto.PrintList();
                 break;
             }
+
+            cout << endl;
         }while(opcion == 2);
     }
 }
