@@ -1,5 +1,6 @@
 #ifndef VARIOS_H
 #define VARIOS_H
+using namespace std;
 
 int n = 0;
 
