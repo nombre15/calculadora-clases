@@ -27,7 +27,7 @@ int main(){
             cout << "Opciones: " << endl << "1 - Suma\n2 - Resta\n3 - Division\n4 - Multiplicacion\n5 - Elevar\n6 - Raiz\n7 - Logaritmo" << endl;
             cin >> opcion;
 
-            switch(opcion){
+            switch(opcion2){
 
                 case 1: CalculadoraObjeto.suma();
                 cout << endl << x << " + " << y << " = " << resultado;
