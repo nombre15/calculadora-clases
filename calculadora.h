@@ -3,12 +3,16 @@
 #include <math.h>
 using namespace std;
 
-float resultado, x, y;
+//INSERT VARIABLES IN HERE FOR FUCKING PROGRAM TO WORK
 
 class calculadora
 {
 
 public:
+    
+    //THIS WORKS ONLY IF YOU MAKE THESE VARIABLES GLOBAL
+    float resultado, resultado2, x, y;
+    
     void suma(){
         resultado = x + y;
     }
