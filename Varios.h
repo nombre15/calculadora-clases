@@ -1,6 +1,9 @@
 #ifndef VARIOS_H
 #define VARIOS_H
+#include <time.h>
 using namespace std;
+
+//CANT INCLUDE CALCULADORA.H DONT FUCKING KNOW WHY
 
 int n = 0;
 
