@@ -50,11 +50,13 @@ int main(){
                 break;
 
                 case 6: CalculadoraObjeto.raiz();
-                cout << endl << "sqrt " << x << " = " << resultado;
+                cout << endl << "cuadrado de " << x << " = " << resultado;
+                cout << endl << "cuadrado de " << y << " = " << resultado2;
                 break;
 
                 case 7: CalculadoraObjeto.logaritmo();
                 cout << endl << "log " << x << " = " << resultado;
+                cout << endl << "log " << y << " = " << resultado;
                 break;
 
             }
