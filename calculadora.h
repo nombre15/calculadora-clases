@@ -31,10 +31,12 @@ public:
 
     void raiz(){
         resultado = sqrt(x);
+        resultado2 = sqrt(y);
     }
 
     void logaritmo(){
         resultado = log(x);
+        resultado2 = log(y);
     }
 };
 
