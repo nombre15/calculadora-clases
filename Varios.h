@@ -3,8 +3,6 @@
 #include <time.h>
 using namespace std;
 
-//CANT INCLUDE CALCULADORA.H DONT FUCKING KNOW WHY
-
 int n = 0;
 
 class Varios{
@@ -52,7 +50,7 @@ public:
         cout << "\nNumero elegido: " << primero + rand() %(ultimo + 1 - primero) << endl;
     }
 
-    void lista(){
+    int* lista(){
 
         cout << "Escribe el numero de elemento de la lista, o 0 para hacerla indefinida" << endl;
         cin >> n;
@@ -73,29 +71,24 @@ public:
 
             cin >> lista[i];
         }
-
-        for(int i = 0; i < n; i++){
-
-            cout << lista[i] << endl;
-        }
-
     }
 
-    void PrintList(){
+    int PrintList(){
 
         if(n == 0){
 
-            cout << "List is empty" << endl;
-            return;
+            cout << "La lista esta vacia" << endl;
+            return 0;
         }
 
         else{
 
-            cout << "List is: " << endl;
+            cout << "La lista es: " << endl;
+            int* list_array = lista();
 
             for(int i = 0; i < n; i++){
 
-                cout << lista[i] << endl;
+                cout << list_array[i] << endl;
             }
         }
     }
